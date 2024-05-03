@@ -2,6 +2,7 @@
 
 ## Summary
 This repository is a collection of my notes and code implementations from the book **Dive into Deep Learning** by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola. The book is available online at [d2l.ai](https://d2l.ai/).
+I have chosen to study the PyTorch implementation version of the book.
 
 # Table of Contents
 1. [Preliminaries](#Premiliminaries)
