@@ -1,5 +1,14 @@
 # Start of Dive into Deep Learning
 
+## Summary
+This repository is a collection of my notes and code implementations from the book **Dive into Deep Learning** by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola. The book is available online at [d2l.ai](https://d2l.ai/).
+
+# Table of Contents
+1. [Preliminaries](#Premiliminaries)
+2. [Linear Neural Networks for Regression](#Linear-Neural-Networks-for-Regression)
+3. [Notes Folder](#Notes-Folder)
+4. [Project Folder](#Projects-Folder)
+
 ## Premiliminaries
 
 | Chapter | Done |
@@ -31,5 +40,6 @@
 Additionnaly, there this is the folder I'll put my **notes**:
 [Notes](https://github.com/Vincent-devSG/DIDL/tree/main/notes)
 
+### Projects Folder
 And the folder where I'll do small **projects** as I advance in the book:
 [Projects](https://github.com/Vincent-devSG/DIDL/tree/main/projects)
