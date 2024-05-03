@@ -28,10 +28,8 @@
 
 
 ### Notes Folder
-Additionnaly, there this is the folder I'll put my notes:
-
+Additionnaly, there this is the folder I'll put my **notes**:
 [Notes](https://github.com/Vincent-devSG/DIDL/tree/main/notes)
 
-And the folder where I'll do small projects as I advance in the book:
-
+And the folder where I'll do small **projects** as I advance in the book:
 [Projects](https://github.com/Vincent-devSG/DIDL/tree/main/projects)
