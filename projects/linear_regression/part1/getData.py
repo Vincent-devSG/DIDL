@@ -2,8 +2,11 @@ import pandas as pd
 import numpy as np
 from typing import Tuple
 
+# Set seed for reproducibility
+np.random.seed(seed=1234)
 
-def getDataSplits() -> pd.DataFrame:
+
+def getDataSplits() -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Returns the train and test split.
 
