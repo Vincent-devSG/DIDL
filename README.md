@@ -33,7 +33,7 @@ I have chosen to study the PyTorch implementation version of the book.
 | [- Linear Regression Implementation from Scratch](https://d2l.ai/chapter_linear-regression/linear-regression-scratch.html) | ❌ |
 | [- Concise Implementation of Linear Regression](https://d2l.ai/chapter_linear-regression/linear-regression-concise.html) | ❌ |
 | [- Generalization](https://d2l.ai/chapter_linear-regression/generalization.html) | ✅ |
-| [- Weight Decay](https://d2l.ai/chapter_linear-regression/weight-decay.html) | ❌ |
+| [- Weight Decay](https://d2l.ai/chapter_linear-regression/weight-decay.html) | ✅ |
 
 
 
