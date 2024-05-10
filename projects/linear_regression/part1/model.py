@@ -69,7 +69,7 @@ def BatchGradientDescent(
         w[1:] = w[1:]*(1 - learning_rate * weight_decay) - learning_rate/len(x_train) * np.dot((y_hat - y_train), x_train)
 
         error = MSE(y_train, y_hat)
-        error_matrix = np.append(error_matrix, error)
+        #error_matrix = np.append(error_matrix, error)
 
         delta_Error = abs(old_Error - error)
         old_Error = error
