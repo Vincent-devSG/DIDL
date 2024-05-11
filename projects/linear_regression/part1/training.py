@@ -4,10 +4,10 @@ import getData
 import model
 import matplotlib.pyplot as plt
 
-learning_rate = 10e-8
-max_epochs = 5_000_000
-error_threshold = 10e-9
-weight_decay = 5
+learning_rate = 10e-6
+max_epochs = 10_000_000
+error_threshold = 10e-10
+weight_decay = 10e-3
 
 # Set seed for reproducibility
 np.random.seed(seed=1234)
@@ -29,15 +29,21 @@ w_hat, error_matrix = model.BatchGradientDescent(x_train, y_train, error_thresho
 # plot target against predicted
 y_hat = np.dot(x_test, w_hat[1:]) + w_hat[0]
 
-# order y_test
-y_test = np.sort(y_test)
-# order y_hat
-y_hat = np.sort(y_hat)
+# check error
+print(f'MSE: {model.MSE(y_test, y_hat)}')
+
+# Negative values are not possible for the target also value should be between 0 and 1 
+# so we clip the values
+y_hat = np.clip(y_hat, 0, 1)
+
+y_test_sorted = np.sort(y_test)
+idx = np.argsort(y_test)
+y_hat_hat = y_hat[idx]
 
 # plot the target in red
-plt.plot(y_test, 'ro')
+plt.plot(y_test_sorted, 'ro')
 # plot the predicted in blue
-plt.plot(y_hat, 'bo')
+plt.plot(y_hat_hat, 'bo')
 plt.show()
 
 

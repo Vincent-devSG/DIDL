@@ -45,8 +45,8 @@ def BatchGradientDescent(
         None
     """
     # Init parameters
-    delta_Error = 10e3
-    old_Error = 10e3
+    delta_Error = 1
+    old_Error = 0
     ephocs = 0
 
     while delta_Error > error_threshold:
@@ -59,12 +59,13 @@ def BatchGradientDescent(
 
         y_hat = np.dot(x_train, w[1:]) + w[0]
 
-        w[0] = w[0] - learning_rate / len(x_train) * np.sum(y_hat - y_train)
-
+        w[0] = w[0]*(1 - learning_rate * weight_decay) - learning_rate / len(x_train) * np.sum(y_hat - y_train)
+        
+        """
         w[1:] = w[1:] - learning_rate / len(x_train) * np.dot(
             (y_hat - y_train), x_train
         )
-
+        """
         # with weights decay
         w[1:] = w[1:]*(1 - learning_rate * weight_decay) - learning_rate/len(x_train) * np.dot((y_hat - y_train), x_train)
 
