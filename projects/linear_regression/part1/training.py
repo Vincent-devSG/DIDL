@@ -3,6 +3,10 @@ import numpy as np
 import getData
 import model
 import matplotlib.pyplot as plt
+import timeit
+
+# start the timer
+start = timeit.default_timer()
 
 learning_rate = 10e-6
 max_epochs = 10_000_000
@@ -44,6 +48,11 @@ y_hat_hat = y_hat[idx]
 plt.plot(y_test_sorted, 'ro')
 # plot the predicted in blue
 plt.plot(y_hat_hat, 'bo')
+
+# stop the timer
+stop = timeit.default_timer()
+print('Time: ', stop - start)
+
 plt.show()
 
 
