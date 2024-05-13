@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 learning_rate = 10e-6
 max_epochs = 10_000_000
 error_threshold = 10e-10
-weight_decay = 10e-3
+weight_decay = 10e-2
 
 # Set seed for reproducibility
 np.random.seed(seed=1234)
