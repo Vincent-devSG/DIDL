@@ -36,9 +36,8 @@ w_hat, error_matrix = model.BatchGradientDescent(x_train, y_train, error_thresho
 stop = timeit.default_timer()
 print('Time: ', stop - start)
 
-
 # plot target against predicted
-y_hat = np.dot(x_test, w[1:]) + w[0]
+y_hat = np.dot(x_test, w_hat[1:]) + w_hat[0]
 
 # Negative values are not possible for the target also value should be between 0 and 1 
 # so we clip the values
@@ -78,7 +77,7 @@ plt.plot(y_hat_hat, 'b', linewidth = '0.5')
 plt.show()
 
 
-feature_weights = np.abs(w[1:])
+feature_weights = np.abs(w_hat[1:])
 # Get feature names
 feature_names = train.columns[:-1]  # Assuming the last column is the target variable
 
