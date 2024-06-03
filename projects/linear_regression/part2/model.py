@@ -42,7 +42,8 @@ def BatchGradientDescent(
         error_matrix: the error matrix
 
     Returns:
-        None
+        weights: the weights predicted
+        error_matrix: the error matrix
     """
     # Init parameters
     delta_Error = 1
