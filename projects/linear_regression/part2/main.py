@@ -23,10 +23,10 @@ y_hat_hat = y_hat[idx]
 
 plt.title("predicted vs target")
 plt.plot(y_test_sorted, "r.")
-plt.plot(y_hat_hat, "b.")
+plt.plot(y_hat_hat, "b")
 
-# plot a line between the points
-for i in range(len(y_test)):
-    plt.plot([i, i], [y_test_sorted[i], y_hat_hat[i]], 'b-')
+# # plot a line between the points
+# for i in range(len(y_test)):
+#     plt.plot([i, i], [y_test_sorted[i], y_hat_hat[i]], 'b-')
 
 plt.show()
