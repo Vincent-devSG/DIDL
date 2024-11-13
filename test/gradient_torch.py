@@ -36,7 +36,7 @@ for epoch in range(n_iters):
     
     # gradients = backward pass
     l.backward() # dl/dw
-    
+        
     # update weights
     with torch.no_grad():
         w -= learning_rate * w.grad

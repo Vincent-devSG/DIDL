@@ -46,7 +46,7 @@ class MulTransform():
         return input, target
         
 
-dataset = WineDataset(transform=MulTransform(2))
+dataset = WineDataset(transform=None)
 first_data  = dataset[0]
 features, labels = first_data
 print(type(features), type(labels))
@@ -59,3 +59,6 @@ first_data  = dataset[0]
 features, labels = first_data
 print(type(features), type(labels))
 print(features)
+
+
+# --> understanding of the Dataset and DataLoader classes in PyTorch. Going back to DiveIntoDeepLearning. Closing the first chapter, Linear Regression.
